@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { catchError, distinctUntilChanged, filter, Observable, of, Subject, switchMap, takeUntil } from 'rxjs';
-import { CountryService } from 'src/app/core/services/contries.service';
-import { Status } from 'src/app/shared/models/enums/status.enum';
+import { filter, Observable, Subject, takeUntil } from 'rxjs';
+import { Status } from '../../../../shared/models/enums/status.enum';
 
 @Component({
   selector: 'app-zipcode-entry',
@@ -26,7 +25,7 @@ export class ZipcodeEntryComponent implements OnInit, OnDestroy {
     }
   )
 
-  constructor(private _countryService: CountryService) {
+  constructor() {
   }
 
   ngOnInit(): void {

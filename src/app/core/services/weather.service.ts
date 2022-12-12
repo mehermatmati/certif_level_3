@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import {BehaviorSubject, interval, map, Observable, Subject, switchMap, takeUntil, tap, timer} from 'rxjs';
 
 import {HttpClient} from '@angular/common/http';
-import { DailyForecast } from 'src/app/shared/models/daily-forecast.model';
-import { Location } from 'src/app/shared/models/location.model';
-import { LocationData } from 'src/app/shared/models/location-data.model';
-import { Status } from 'src/app/shared/models/enums/status.enum';
+import { DailyForecast } from '../../shared/models/daily-forecast.model';
+import { Location } from '../../shared/models/location.model';
+import { LocationData } from '../../shared/models/location-data.model';
+import { Status } from '../../shared/models/enums/status.enum';
 
 @Injectable()
 export class WeatherService {

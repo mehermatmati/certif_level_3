@@ -1,11 +1,11 @@
 import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { catchError, combineLatest, distinctUntilChanged, forkJoin, Observable, of, Subject, switchMap, takeUntil, tap, throwError, timer} from 'rxjs';
-import { CountryService } from 'src/app/core/services/contries.service';
-import { LocalStorageService } from 'src/app/core/services/local-storage.service';
-import { WeatherService } from 'src/app/core/services/weather.service';
-import { Status } from 'src/app/shared/models/enums/status.enum';
-import { Location } from 'src/app/shared/models/location.model';
-import { AppConst } from 'src/app/shared/utils/app.const';
+import { CountryService } from '../../../core/services/contries.service';
+import { LocalStorageService } from '../../../core/services/local-storage.service';
+import { WeatherService } from '../../../core/services/weather.service';
+import { Status } from '../../../shared/models/enums/status.enum';
+import { Location } from '../../../shared/models/location.model';
+import { AppConst } from '../../../shared/utils/app.const';
 import { ZipcodeEntryComponent } from './zipcode-entry/zipcode-entry.component';
 
 @Component({

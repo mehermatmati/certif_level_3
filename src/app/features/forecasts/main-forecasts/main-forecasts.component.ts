@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { concatMap, Subject, takeUntil } from 'rxjs';
-import { WeatherService } from 'src/app/core/services/weather.service';
-import { DailyForecast } from 'src/app/shared/models/daily-forecast.model';
+import { WeatherService } from '../../../core/services/weather.service';
+import { DailyForecast } from '../../../shared/models/daily-forecast.model';
 
 @Component({
   selector: 'app-main-forecasts',
