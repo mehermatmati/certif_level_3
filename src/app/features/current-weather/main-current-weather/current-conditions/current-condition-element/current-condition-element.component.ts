@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { WeatherService } from 'src/app/core/services/weather.service';
-import { WeatherUtils } from 'src/app/shared/utils/weather.utils';
+import { WeatherService } from '../../../../../core/services/weather.service';
+import { WeatherUtils } from '../../../../../shared/utils/weather.utils';
 
 @Component({
   selector: 'app-current-condition-element',
